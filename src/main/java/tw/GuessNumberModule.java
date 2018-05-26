@@ -9,6 +9,7 @@ public class GuessNumberModule extends AbstractModule {
 
     @Override
     protected void configure() {
+
     }
 }
 

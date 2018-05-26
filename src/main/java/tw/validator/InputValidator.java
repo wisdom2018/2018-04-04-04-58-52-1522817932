@@ -17,7 +17,7 @@ public class InputValidator {
         return isValidate && validateSingleGigit(numList, NumCount);
     }
 
-    private boolean validateSingleGigit(List<String> numList, int numCount) {
+    private boolean validateSingleGigit(List<String> numList, int numCount) {       //repeate number validate
         return numList.stream()
                 .map(num -> parseInt(num))
                 .distinct()

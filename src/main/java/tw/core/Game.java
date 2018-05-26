@@ -36,7 +36,7 @@ public class Game {
         return guessResult;
     }
 
-    public List<GuessResult> guessHistory() {
+    public List<GuessResult> guessHistory() {                                                //
         return guessResults;
     }
 

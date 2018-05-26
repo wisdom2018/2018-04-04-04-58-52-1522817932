@@ -1,8 +1,13 @@
 package tw;
 
 import com.google.inject.Injector;
+//import jdk.internal.util.xml.impl.Input;
 import tw.commands.GuessInputCommand;
 import tw.controllers.GameController;
+//import jdk.internal.util.xml.impl.Input;
+
+
+import java.util.Scanner;
 
 import static com.google.inject.Guice.createInjector;
 
@@ -11,8 +16,10 @@ import static com.google.inject.Guice.createInjector;
  */
 public class Main {
 
+
     public static void main(String[] args) throws Exception {
 
+        Main main = new Main();
         Injector injector = createInjector(new GuessNumberModule());
         GameController gameController = injector.getInstance(GameController.class);
 
